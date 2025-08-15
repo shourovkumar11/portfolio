@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
@@ -45,8 +46,9 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Theme Toggle and CTA Button */}
+          <div className="hidden md:flex items-center space-x-3">
+            <ThemeToggle />
             <Button variant="hero" size="sm" asChild>
               <Link to="/contact">Let's Work Together</Link>
             </Button>
@@ -81,8 +83,9 @@ const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-3 py-2">
-                <Button variant="hero" size="sm" className="w-full" asChild>
+              <div className="flex items-center gap-2 px-3 py-2">
+                <ThemeToggle />
+                <Button variant="hero" size="sm" className="flex-1" asChild>
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
                     Let's Work Together
                   </Link>

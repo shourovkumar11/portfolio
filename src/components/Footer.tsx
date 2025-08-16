@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -115,6 +115,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
               © {currentYear} DevPortfolio. All rights reserved.
+            </p>
+            <p className="text-sm text-muted-foreground flex items-center mt-2 md:mt-0">
+              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using React & Tailwind CSS
             </p>
           </div>
         </div>

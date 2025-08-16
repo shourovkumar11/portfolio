@@ -116,9 +116,6 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               © {currentYear} DevPortfolio. All rights reserved.
             </p>
-            <p className="text-sm text-muted-foreground flex items-center mt-2 md:mt-0">
-              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using React & Tailwind CSS
-            </p>
           </div>
         </div>
       </div>

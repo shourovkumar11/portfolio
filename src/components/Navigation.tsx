@@ -27,7 +27,7 @@ const Navigation = () => {
             to="/" 
             className="text-xl font-bold gradient-hero bg-clip-text text-transparent hover:scale-105 transition-smooth"
           >
-            DevPortfolio
+            Shourov Kumar
           </Link>
 
           {/* Desktop Navigation */}

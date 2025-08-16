@@ -66,7 +66,7 @@ const StarRating = ({ rating }: { rating: number }) => {
           key={index}
           className={`w-4 h-4 ${
             index < rating
-              ? "fill-accent text-accent"
+              ? "fill-yellow-400 text-yellow-400"
               : "fill-muted text-muted-foreground"
           }`}
         />
@@ -131,7 +131,7 @@ const Testimonials = () => {
               {[...Array(5)].map((_, index) => (
                 <Star
                   key={index}
-                  className="w-5 h-5 fill-accent text-accent"
+                  className="w-5 h-5 fill-yellow-400 text-yellow-400"
                 />
               ))}
             </div>
